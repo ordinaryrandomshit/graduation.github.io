@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Graduation</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="theme-toggle">
+    <label>
+      <input type="checkbox" id="toggleTheme">
+      🌗 Toggle Mode
+    </label>
+  </div>
+
+  <div class="container">
+    <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <h1>🎓 Happy Graduation!</h1>
+          <p id="typingText">Claresta Elzaandra</p>
+          <button onclick="celebrate()">🎉 Celebrate</button>
+        </div>
+        <div class="card-back">
+          <h2>💌 Special Message</h2>
+          <p>congrats yaa anak teknik paling cakep se ui</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <audio id="bgMusic" loop>
+    <source src="tarot_feast.mp3" type="audio/mpeg">
+  </audio>
+
+  <canvas id="confetti-canvas"></canvas>
+  <script src="script.js"></script>
+  <div class="scene">
+  <div class="school">🏫</div>
+  <div class="student">🧑‍🎓</div> l
+  <button onclick="startGame()">🕹️ Play Mini Game</button>
+<div class="game-area" id="gameArea" style="display: none;">
+  <p>🎯 Score: <span id="score">0</span></p>
+</div>
+</div>
+</body>
+</html>
